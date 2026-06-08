@@ -5,12 +5,11 @@
 }
 
 body {
-
+    overflow-x: hidden;
     font-size: 1.2rem;
     font-family: "Work Sans", sans-serif;
 
     min-height: 2000px;
-
 }
 
 .hero::before {
@@ -75,7 +74,7 @@ body {
 
 .mynavbar .offcanvas {
     height: 100vh;
-    width: 50vh;
+    width: 50%;
 }
 
 .mynavbar .nav-link {
@@ -121,6 +120,8 @@ body {
 
 .home .couple img {
     width: 100%;
+    max-width: 180px;
+    height: auto;
 }
 
 .home .heart{
