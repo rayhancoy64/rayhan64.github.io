@@ -141,17 +141,27 @@
     </script>
 
     <script>
-        const stickytop = document.querySelector('.sticky-top')
-        const offcanvas = document.querySelector('.offcanvas')
+        const stickytop = document.querySelector('.sticky-top');
+        const offcanvas = document.querySelector('.offcanvas');
+        const navbar = document.querySelector('.mynavbar');
 
-        offcanvas.addEventListener('show.bs.offcanvas', function(){
+        offcanvas.addEventListener('show.bs.offcanvas', function () {
+            // Atasi scroll horizontal
             stickytop.style.overflow = 'visible';
+
+            // Matikan blur sementara
+            navbar.style.backdropFilter = 'none';
+            navbar.style.webkitBackdropFilter = 'none';
         });
 
-        offcanvas.addEventListener('hidden.bs.offcanvas', function(){
+        offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+            // Kembalikan pengaturan scroll
             stickytop.style.overflow = 'hidden';
+
+            // Aktifkan blur kembali
+            navbar.style.backdropFilter = 'blur(2.5px)';
+            navbar.style.webkitBackdropFilter = 'blur(2.5px)';
         });
-        
     </script>
 
   </body>
