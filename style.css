@@ -18,11 +18,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(img/fotowedding.jpg);
+    background-image: url(img/hola.jpg);
     z-index: -1;
 
     background-size: cover;
-    background-position: center;
+    background-position: center 30%;
     background-repeat: no-repeat;
     filter: brightness(50%);
 }
