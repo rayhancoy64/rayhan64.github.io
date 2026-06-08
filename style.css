@@ -73,6 +73,7 @@ body {
 
 .mynavbar .offcanvas {
     height: 100vh;
+    width: 50%;
 
 }
 
@@ -166,11 +167,15 @@ body {
         font-size: 65%;
     }
 
+    .mynavbar .offcanvas {
+        width: 50%;
+    }
+
     .mynavbar .nav-link {
     font-size: 1.5rem;
     text-align: center;
     }
-    
+
     .sticky-top {
         overflow: hidden;
     }
